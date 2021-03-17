@@ -1,0 +1,30 @@
+/*
+*
+*    This is the file of breakpoints
+*
+*/
+
+@mixin mobile {
+	@media (min-width: 576px) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media (min-width: 992px) {
+		@content;
+	}
+}
+
+@mixin wide {
+	@media (min-width: 1200px) {
+		@content;
+	}
+}
+

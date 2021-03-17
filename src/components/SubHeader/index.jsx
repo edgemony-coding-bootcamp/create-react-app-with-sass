@@ -3,7 +3,7 @@ import classes from "./styles.module.scss";
 import Logo from "../Logo";
 import sassLogo from "../../assets/images/sass.svg";
 
-const Header = ({ showTitle }) => {
+const SubHeader = ({ showTitle }) => {
   const [darkMode, setDarkMode] = useState(true);
 
   const classNamesToApply = [
@@ -34,4 +34,4 @@ const Header = ({ showTitle }) => {
   );
 };
 
-export default Header;
+export default SubHeader;

@@ -1,0 +1,66 @@
+@import '../../shared/styles/_colors.scss';
+@import '../../shared/styles/_mixin.scss';
+@import '../../shared/styles/_breakpoints.scss';
+
+.Header {
+	position: relative;
+	background-color: $color-white;
+	height: 75px;
+	display: flex;
+
+	&.is-dark {
+		background-color: $color-blue;
+
+		.Header-content .Header-title > h1 {
+			color:  $color-lightblue;
+		}
+	}
+
+	.Header-content {
+		max-width: 1280px;
+		@include centerWithMargin();
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		padding: 0 20px;
+		box-sizing: border-box;
+
+		> button {
+			background-color: transparent;
+			border: 0;
+			margin: 0;
+			padding: 0;
+			cursor: pointer;
+
+			&:focus {
+				outline: 0;
+				box-shadow: none;
+			}
+		}
+
+		.Header-title {
+			position: relative;
+			@include flexAlignHorizontalCenter();
+
+			> h1 {
+				@include fontMain(16px, 20px, $color-blue);
+				margin: 0 10px 0 0;
+			}
+
+			> img {
+				height: 35px;
+			}
+		}
+	}
+}
+
+@include wide {
+	.Header-title > h1 {
+		font-size: 20px;
+	}
+
+	.Header-title > img {
+		height: 40px;
+	}
+}

@@ -1,0 +1,13 @@
+@import '../../shared/styles/_colors.scss';
+@import '../../shared/styles/_mixin.scss';
+
+.Quote {
+    display: block;
+    font-weight: 500;
+    margin: 30px auto;
+    text-align: center;
+    border: 1px solid $color-blue--light;
+    padding: 20px;
+    box-sizing: border-box;
+	@include fontSecondary(24px, 36px, $color-red);
+}

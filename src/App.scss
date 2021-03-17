@@ -1,6 +1,8 @@
+$min-height-for-app: 100vh;
+
 .App {
     position: relative;
     display: flex;
     flex-flow: column;
-    min-height: 100vh;
+    min-height: $min-height-for-app;
 }

@@ -1,0 +1,34 @@
+/*
+*
+*    This is the file of mixin
+*
+ */
+
+@mixin flex($justifyContent, $alignItems) {
+	display: flex;
+	justify-content: $justifyContent;
+	align-items: $alignItems;
+}
+
+@mixin flexAlignHorizontalCenter() {
+	display: flex;
+	align-items: center;
+}
+
+@mixin centerWithMargin() {
+	margin: 0 auto;
+}
+
+@mixin fontMain($fontSize, $lineHeight, $color) {
+	font-family: 'Poppins', sans-serif;
+	font-size: $fontSize;
+	line-height: $lineHeight;
+	color: $color;
+}
+
+@mixin fontSecondary($fontSize, $lineHeight, $color) {
+	font-family: Helvetica, sans-serif;
+	font-size: $fontSize;
+	line-height: $lineHeight;
+	color: $color;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.css";
+import "./styles.scss";
 
 const Quote = ({ children }) => <span className="Quote">{children}</span>;
 
